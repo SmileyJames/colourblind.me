@@ -14,6 +14,11 @@ $(function () {
 
   var body = $('body');
   var select = $(t);
+  select.css({
+    position: "fixed",
+    bottom: "5%",
+    right: "3%",
+  });
   body.append(select);
 
   select.change(function () {
@@ -30,10 +35,4 @@ $(function () {
       });
     }
   });
-
-  $('<link/>', {
-    rel: 'stylesheet',
-    type: 'text/css',
-    href: 'stylesheet.css'
-  }).appendTo('head');
 });
