@@ -16,7 +16,7 @@ $(function () {
   var select = $(t);
   select.css({
     position: "fixed",
-    bottom: "5%",
+    top: "5%",
     right: "3%",
   });
   body.append(select);

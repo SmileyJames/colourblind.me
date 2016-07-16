@@ -5,14 +5,61 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
   </head>
-  <style>
-    body, html { height: 100%; margin: 0; }
-    h1 { color: red; }
-  </style>
   <body>
-    <h1>colour blind me</h1>
-    <img src="http://loremflickr.com/320/240"/>
-    <p>In browser colour blindness emulator</p>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+              <h1>Colour Blind Me <small>The colour blindness simulator for Englishmen</small></h1>
+          </div>
+          <p>View websites through the eyes of a colour blind person..</p>
+
+          <h2>Install</h2>
+
+          <h3>Install by adding to the website code.</h3>
+          <p>Add to the script to the developement version of your site. Add the below script tag to your HTML.</p>
+          <pre>
+            <code>
+              &lt;script src="https://colourblind.me/js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+
+          <h3>Install using developer tools.</h3>
+          <p>Paste the below code into the console in the developer tools of your browser.</p>
+          <code>
+            <pre>
+              (function () {
+                var e = document.createElement('script');
+                e.setAttribute("type","text/javascript");
+                e.setAttribute("src", "https://colourblind.me/js");
+                document.getElementsByTagName("head")[0].appendChild(e);
+              })();
+            </pre>
+          </code>
+
+          <h3>Grease monkey.</h3>
+          <p>Or use greasemonkey.</p>
+
+          <h3>Browser Support</h3>
+          <p>
+            Firefox only
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <img class="pull-right" src="http://loremflickr.com/320/240?v=0"/>
+          <img class="pull-right" src="http://loremflickr.com/320/240?v=1"/>
+        </div>
+        <div class="col-xs-6">
+          <img class="pull-left" src="http://loremflickr.com/320/240?v=2"/>
+          <img class="pull-left" src="http://loremflickr.com/320/240?v=3"/>
+        </div>
+      </div>
+
+    </div>
     <script src="bin/colourblind.me.js"></script>
   </body>
 </html>
