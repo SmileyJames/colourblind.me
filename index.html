@@ -10,56 +10,56 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="page-header">
-              <h1>Colour Blind Me <small>The colour blindness simulator for Englishmen</small></h1>
+          <div class="jumbotron">
+            <h1>Colo<strong>u</strong>r Blind Me!</h1>
+            <p>The colour blindness simulator for Englishmen</p>
+            <p>View websites through the eyes of a colour blind person.</p>
           </div>
-          <p>View websites through the eyes of a colour blind person..</p>
+
+          <h2>Browser support</h2>
+          <p>Colour Blind Me relies upon browser support for SVG effects for HTML. The support for this feature is listed below.</p>
+          <p class="ciu_embed" data-feature="svg-html" data-periods="future_1,current,past_1,past_2">
+            <a href="http://caniuse.com/#feat=svg-html">Can I Use svg-html?</a> Data on support for the svg-html feature across the major browsers from caniuse.com.
+          </p>
 
           <h2>Install</h2>
 
           <h3>Install by adding to the website code.</h3>
           <p>Add to the script to the developement version of your site. Add the below script tag to your HTML.</p>
-          <pre>
-            <code>
-              &lt;script src="https://colourblind.me/js"&gt;&lt;/script&gt;
-            </code>
-          </pre>
+          <pre><code>&lt;script src="https://colourblind.me/colourblind.me.js"&gt;&lt;/script&gt;</code></pre>
 
           <h3>Install using developer tools.</h3>
           <p>Paste the below code into the console in the developer tools of your browser.</p>
-          <code>
-            <pre>
-              (function () {
-                var e = document.createElement('script');
-                e.setAttribute("type","text/javascript");
-                e.setAttribute("src", "https://colourblind.me/js");
-                document.getElementsByTagName("head")[0].appendChild(e);
-              })();
-            </pre>
-          </code>
+          <pre><code>(function () {
+  var e = document.createElement('script');
+  e.setAttribute("type","text/javascript");
+  e.setAttribute("src", "https://colourblind.me/colourblind.me.js");
+  document.getElementsByTagName("head")[0].appendChild(e);
+})();</code></pre>
 
           <h3>Grease monkey.</h3>
           <p>Or use greasemonkey.</p>
 
-          <h3>Browser Support</h3>
-          <p>
-            Firefox only
-          </p>
+          <h3>Colour blindness tests</h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="block-center img-responsive" src="images/Ishihara_1.svg" alt="Ishihara 1"/>
+            </div>
+            <div class="col-sm-4">
+              <img class="block-center img-responsive" src="images/Ishihara_11.png" alt="Ishihara 11"/>
+            </div>
+            <div class="col-sm-4">
+              <img class="block-center img-responsive" src="images/Ishihara_23.png" alt="Ishihara 23"/>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-6">
-          <img class="pull-right" src="http://loremflickr.com/320/240?v=0"/>
-          <img class="pull-right" src="http://loremflickr.com/320/240?v=1"/>
-        </div>
-        <div class="col-xs-6">
-          <img class="pull-left" src="http://loremflickr.com/320/240?v=2"/>
-          <img class="pull-left" src="http://loremflickr.com/320/240?v=3"/>
-        </div>
-      </div>
 
     </div>
     <script src="bin/colourblind.me.js"></script>
+
+    <script src="//cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
   </body>
 </html>
