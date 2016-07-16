@@ -26,14 +26,14 @@
 
           <h3>Install by adding to the website code.</h3>
           <p>Add to the script to the developement version of your site. Add the below script tag to your HTML.</p>
-          <pre><code>&lt;script src="https://colourblind.me/colourblind.me.js"&gt;&lt;/script&gt;</code></pre>
+          <pre><code>&lt;script src="https://colourblind.me/lib.js"&gt;&lt;/script&gt;</code></pre>
 
           <h3>Install using developer tools.</h3>
           <p>Paste the below code into the console in the developer tools of your browser.</p>
           <pre><code>(function () {
   var e = document.createElement('script');
   e.setAttribute("type","text/javascript");
-  e.setAttribute("src", "https://colourblind.me/colourblind.me.js");
+  e.setAttribute("src", "https://colourblind.me/lib.js");
   document.getElementsByTagName("head")[0].appendChild(e);
 })();</code></pre>
 
@@ -58,7 +58,7 @@
 
 
     </div>
-    <script src="bin/colourblind.me.js"></script>
+    <script src="lib.js"></script>
 
     <script src="//cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
   </body>

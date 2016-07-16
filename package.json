@@ -4,7 +4,7 @@
   "description": "Colour blindness simulator for your website.",
   "main": "colourblind.me.js",
   "scripts": {
-    "build": "cat ./node_modules/jquery/dist/jquery.min.js colourblind.me.js > ./bin/colourblind.me.js"
+    "build": "cat ./node_modules/jquery/dist/jquery.min.js colourblind.me.js > ./lib.js"
   },
   "repository": {
     "type": "git",
