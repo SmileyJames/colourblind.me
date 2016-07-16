@@ -1,26 +1,39 @@
 $(function () {
   var t = '' +
-  '<div id="colourblindme-controls">' +
-  '  <button>colour blind me</button>' +
-  '  <select>' +
-  '    <option>Type</option>' +
-  '  </select>' +
-  '</div>';
+  '<select id="colourblindme-select">' +
+  '  <option value="">Normal</option>' +
+  '  <option value="protanopia">Protanopia</option>' +
+  '  <option value="protanomaly">Protanomaly</option>' +
+  '  <option value="deuteranopia">Deuteranopia</option>' +
+  '  <option value="deuteranomaly">Deuteranomaly</option>' +
+  '  <option value="tritanopia">Tritanopia</option>' +
+  '  <option value="tritanomaly">Tritanomaly</option>' +
+  '  <option value="achromatopsia">Achromatopsia</option>' +
+  '  <option value="achromatomaly">Achromatomaly</option>' +
+  '</select>';
 
-  var e = $(t);
-  $('body').append(e);
+  var body = $('body');
+  var select = $(t);
+  body.append(select);
 
-  var button = e.find('button');
-  var button = e.find('select');
+  select.change(function () {
+    var value = select.val();
+    if (value === '') {
+      body.css({
+          '-webkit-filter': 'none',
+          'filter': 'none',
+      });
+    } else {
+      body.css({
+          '-webkit-filter': 'url("filters.svg#' + value + '"),',
+          'filter': 'url("filters.svg#' + value + '")',
+      });
+    }
+  });
 
   $('<link/>', {
     rel: 'stylesheet',
     type: 'text/css',
     href: 'stylesheet.css'
   }).appendTo('head');
-
-  html2canvas(document.body).then(function(canvas) {
-    canvas.id = "colourblindme-canvas"
-    document.body.appendChild(canvas);
-  });
 });
