@@ -1,0 +1,30 @@
+{
+  "name": "colourblind.me",
+  "version": "1.0.0",
+  "description": "Colour blindness simulator for your website.",
+  "main": "colourblind.me.js",
+  "scripts": {
+    "build": "cat ./node_modules/es6-promise/dist/es6-promise.min.js ./node_modules/html2canvas/dist/html2canvas.min.js ./node_modules/jquery/dist/jquery.min.js colourblind.me.js > ./bin/colourblind.me.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmileyJames/colourblind.me.git"
+  },
+  "keywords": [
+    "color",
+    "colour",
+    "blind",
+    "blindness",
+    "simulator"
+  ],
+  "author": "James O'Toole",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SmileyJames/colourblind.me/issues"
+  },
+  "homepage": "https://github.com/SmileyJames/colourblind.me#readme",
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "html2canvas": "^0.5.0-beta4"
+  }
+}
