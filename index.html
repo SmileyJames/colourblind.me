@@ -16,29 +16,18 @@
             <p>View websites through the eyes of a colour blind person.</p>
           </div>
 
+          <h2>Install</h2>
+
+          <p><a href="colourblind.me.js" download="colourblind.me.js" class="btn btn-primary">Download</a></p>
+          <p>Add the script to the development version of your site, add the script tag below to your HTML.</p>
+          <pre><code>&lt;script src="colourblind.me.js"&gt;&lt;/script&gt;</code></pre>
+          <p>The script depends upon jQuery</p>
+
           <h2>Browser support</h2>
           <p>Colour Blind Me relies upon browser support for SVG effects for HTML. The support for this feature is listed below.</p>
           <p class="ciu_embed" data-feature="svg-html" data-periods="future_1,current,past_1,past_2">
             <a href="http://caniuse.com/#feat=svg-html">Can I Use svg-html?</a> Data on support for the svg-html feature across the major browsers from caniuse.com.
           </p>
-
-          <h2>Install</h2>
-
-          <h3>Install by adding to the website code.</h3>
-          <p>Add to the script to the developement version of your site. Add the below script tag to your HTML.</p>
-          <pre><code>&lt;script src="https://colourblind.me/lib.js"&gt;&lt;/script&gt;</code></pre>
-
-          <h3>Install using developer tools.</h3>
-          <p>Paste the below code into the console in the developer tools of your browser.</p>
-          <pre><code>(function () {
-  var e = document.createElement('script');
-  e.setAttribute("type","text/javascript");
-  e.setAttribute("src", "https://colourblind.me/lib.js");
-  document.getElementsByTagName("head")[0].appendChild(e);
-})();</code></pre>
-
-          <h3>Grease monkey.</h3>
-          <p>Or use greasemonkey.</p>
 
           <h3>Colour blindness tests</h3>
           <div class="row">
@@ -58,8 +47,8 @@
 
 
     </div>
-    <script src="lib.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+    <script src="colourblind.me.js"></script>
     <script src="//cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
   </body>
 </html>
