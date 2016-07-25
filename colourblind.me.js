@@ -30,8 +30,8 @@ $(function () {
       });
     } else {
       body.css({
-          '-webkit-filter': 'url("filters.svg#' + value + '"),',
-          'filter': 'url("filters.svg#' + value + '")',
+          '-webkit-filter': 'url("https://colourblind.me/filters.svg#' + value + '"),',
+          'filter': 'url("https://colourblind.me/filters.svg#' + value + '")',
       });
     }
   });
